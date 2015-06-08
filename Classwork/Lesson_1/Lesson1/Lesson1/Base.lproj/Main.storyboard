@@ -51,9 +51,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="myFirstAppLabel" destination="y1H-hP-NAc" id="dQQ-3w-ebd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
