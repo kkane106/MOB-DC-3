@@ -50,7 +50,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="211" width="296" height="48"/>
+                                    <rect key="frame" x="51" y="348" width="296" height="48"/>
                                 </variation>
                                 <connections>
                                     <segue destination="qDC-Gv-Kso" kind="show" id="BdR-c1-BwH"/>
@@ -65,12 +65,28 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="53" y="289" width="295" height="51"/>
+                                    <rect key="frame" x="52" y="437" width="295" height="51"/>
                                 </variation>
                                 <connections>
                                     <segue destination="fqW-IJ-z6N" kind="show" id="S3x-7n-Z42"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="goj-Ib-riQ">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="246" width="190" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6a-2H-c2z">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="193" width="190" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -78,6 +94,8 @@
                                 <exclude reference="obz-6T-2V8"/>
                                 <exclude reference="pnA-FV-pSq"/>
                                 <exclude reference="l3W-0v-Xn2"/>
+                                <exclude reference="goj-Ib-riQ"/>
+                                <exclude reference="F6a-2H-c2z"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -89,6 +107,8 @@
                             <mask key="subviews">
                                 <include reference="pnA-FV-pSq"/>
                                 <include reference="l3W-0v-Xn2"/>
+                                <include reference="goj-Ib-riQ"/>
+                                <include reference="F6a-2H-c2z"/>
                             </mask>
                         </variation>
                     </view>
@@ -113,7 +133,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4th VC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1O-hR-Fch">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="179" y="112" width="53" height="21"/>
