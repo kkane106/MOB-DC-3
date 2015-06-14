@@ -39,7 +39,7 @@
                                     <rect key="frame" x="80" y="342" width="60" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="Wdu-1z-6Lp" kind="presentation" id="v7g-lK-EYE"/>
+                                    <segue destination="Wdu-1z-6Lp" kind="show" id="Vvi-hX-NiA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Kris Kane's First App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
@@ -302,6 +302,6 @@
         <image name="tent.jpeg" width="276" height="183"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dj1-rT-8Pi"/>
+        <segue reference="Vvi-hX-NiA"/>
     </inferredMetricsTieBreakers>
 </document>
