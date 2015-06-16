@@ -82,3 +82,13 @@ func anotherFunction(name: String, age: Int?) -> String? {
 
 anotherFunction("Kris", 28)
 anotherFunction("Kris", nil)
+
+// Triangle example
+
+func areaOfTriangle(base: Float, height: Float) -> Float {
+    let area: Float = (base * height)/2
+    return area
+}
+
+areaOfTriangle(8, 6)
+areaOfTriangle(1.0, 2.0)
