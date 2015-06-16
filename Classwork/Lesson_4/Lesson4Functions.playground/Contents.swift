@@ -68,3 +68,17 @@ func lastFunction(alpha: Int, beta: Int, name: String, decimal: Float?) {
 }
 lastFunction(1, 5, "Kris", nil)
 
+// returning an optional --> Differed Initialization
+
+func anotherFunction(name: String, age: Int?) -> String? {
+    var statement: String?
+    if let myAge = age {
+        statement = "yes I was passed an age"
+    } else {
+        statement = "didn't get an age"
+    }
+    return statement
+}
+
+anotherFunction("Kris", 28)
+anotherFunction("Kris", nil)
