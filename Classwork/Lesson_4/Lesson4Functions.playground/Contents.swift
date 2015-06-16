@@ -43,7 +43,7 @@ func functionWithOptional(age: Int, name: String, location: String?) {
 functionWithOptional(28, "Kris", "DC")
 functionWithOptional(28, "Kris", nil)
 
-//
+// using implicit returns with functions in swift
 
 func cat(name: String) -> String {
     let sentence: String = "\(name) meows menacingly"
@@ -52,3 +52,19 @@ func cat(name: String) -> String {
 
 let myCat = cat("Scooter")
 println(myCat)
+
+// iterating with a for loop using inputs and optionals inside a function
+
+func lastFunction(alpha: Int, beta: Int, name: String, decimal: Float?) {
+    for number in alpha...beta {
+        println("My name is \(name) and I have \(number) fingers!")
+        if let decimal = decimal {
+            println("I have $\(decimal) in the bank")
+        } else {
+            println("I am poor")
+        }
+        println("----------")
+    }
+}
+lastFunction(1, 5, "Kris", nil)
+
