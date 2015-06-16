@@ -87,13 +87,44 @@ func tipCalculator(bill: Float, tipPercent: Float) {
 
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
 
-func linearSearch(arrayOfStrings:Array, searchTerm:String) -> Bool {
-    for i in 0...arrayOfStrings.count
+func linearSearch(arrayOfStrings:[String], searchTerm:String) -> Bool {
+    var found: Bool = false
+    for i in 0...(arrayOfStrings.count - 1) {
+
+        if arrayOfStrings[i] == searchTerm {
+            found = true
+        }
+
+    }
+    return found
 }
+
+linearSearch(["banana", "apple"], "banana")
+
 
 
 // BONUS TODO: Write a function that accepts a string and returns a boolean indicating whether a string is a palindrome (reads the same backwards or forwards).
+func checkPalindrome (word: String) -> Bool {
+    var palindrome: Bool = false
+    let forward = Array(word)
+    if forward == forward.reverse() {
+        palindrome = true
+    }
+    return palindrome
+}
+
+checkPalindrome("hannah")
 
 // BONUS TODO: Write a function that takes in two strings and returns a boolean indicating whether the two strings are equal
+func stringEqualityTest (firstWord:String, secondWord:String) -> Bool {
+    var equal: Bool = false
+    if firstWord == secondWord {
+        equal = true
+    }
+    return equal
+}
+
+stringEqualityTest("banana", "banana")
+stringEqualityTest("banana", "apple")
 
 // BONUS TODO: Write a function that accepts two parameters, a string and a function that accepts a string and returns a string. Print the result of passing the string into the function 10 times.
