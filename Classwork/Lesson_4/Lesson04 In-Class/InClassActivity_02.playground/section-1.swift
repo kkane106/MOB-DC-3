@@ -4,15 +4,52 @@
 // Complete these, in order, writing code under each TODO statement. Each statement calls for a function to be written, write each of them and then immediately call it after the function definition.
 
 // TODO: Write a function that prints out "Hello world!" 10 times
+func helloWorldTenTimes() {
+    var i = 1
+    while i < 11 {
+        println("Hello, world!")
+        ++i
+    }
+}
+
+helloWorldTenTimes()
+
 
 // TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
 
+func hitThisLine(numTimes: Int) {
+    for num in 1...numTimes {
+        println("Hit this line \(numTimes) times!")
+    }
+}
+
+hitThisLine(20)
+
 // TODO: Write a function that accepts a string as a parameter. Print "Hello {value of string}!"
+
+func stringFunction(someString:String) {
+    println("Hello \(someString)")
+}
+
+stringFunction("Banana")
 
 // TODO: Write a function accepts a string optional. If the string optional exists, print "Hello {value of string}!". If it doesn't, print "Hello world!"
 
+func stringOptionalFunction(someOptional:String?) {
+    if let someOptional = someOptional {
+        println("Hello \(someOptional)")
+    } else {
+        println("Hello, world!")
+    }
+}
+
+stringOptionalFunction("Banana")
+stringOptionalFunction(nil)
+
 // TODO: Write a function that takes one parameter, n, and returns an integer, the nth series in the fibonacci
 // sequence. The first fibonacci number is 0, the second is 1, the third is 1, the fourth is 2, fifth is 3, sixth is 5, etc. fibonacci numbers at sequence n are the sum of the n-1 and n-2 fibonacci number.
+
+
 
 // TODO: Write a function that calls the above function in order to print the sum of the first 20 fibonacci numbers.
 
