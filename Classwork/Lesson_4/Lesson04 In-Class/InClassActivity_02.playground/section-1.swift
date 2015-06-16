@@ -48,10 +48,30 @@ stringOptionalFunction(nil)
 
 // TODO: Write a function that takes one parameter, n, and returns an integer, the nth series in the fibonacci
 // sequence. The first fibonacci number is 0, the second is 1, the third is 1, the fourth is 2, fifth is 3, sixth is 5, etc. fibonacci numbers at sequence n are the sum of the n-1 and n-2 fibonacci number.
+func fibonacci(n:Int) -> Int {
+    var current = 0, next = 1, result: Int = 0
+    for i in 0...n {
+        let tempVar = current
+        
+        current = next
+        next = tempVar + current
+        result = tempVar
+    }
+    return result
+}
 
+fibonacci(7)
 
 
 // TODO: Write a function that calls the above function in order to print the sum of the first 20 fibonacci numbers.
+
+func twentyFibonacci() {
+    for i in 1...20 {
+        println("\(fibonacci(i))")
+    }
+}
+
+twentyFibonacci()
 
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
 
@@ -59,9 +79,18 @@ stringOptionalFunction(nil)
 
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
 
+func tipCalculator(bill: Float, tipPercent: Float) {
+    let tipAmount = bill * tipPercent
+}
+
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
 
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
+
+func linearSearch(arrayOfStrings:Array, searchTerm:String) -> Bool {
+    for i in 0...arrayOfStrings.count
+}
+
 
 // BONUS TODO: Write a function that accepts a string and returns a boolean indicating whether a string is a palindrome (reads the same backwards or forwards).
 
