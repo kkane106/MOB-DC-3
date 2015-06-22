@@ -40,6 +40,7 @@
 		2E85C1191B3210C500A1F47F /* Lesson_5_Code_AlongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson_5_Code_AlongTests.swift; sourceTree = "<group>"; };
 		2EB01FEE1B32505E0019A3A9 /* Factbook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factbook.swift; sourceTree = "<group>"; };
 		2EB01FF01B3252E60019A3A9 /* Colorwheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorwheel.swift; sourceTree = "<group>"; };
+		3CEE65781B388FA40090A845 /* structpractice.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = structpractice.playground; path = ../../../../../../structpractice.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 				2EB01FEE1B32505E0019A3A9 /* Factbook.swift */,
 				2EB01FF01B3252E60019A3A9 /* Colorwheel.swift */,
 				2E85C1071B3210C400A1F47F /* Main.storyboard */,
+				3CEE65781B388FA40090A845 /* structpractice.playground */,
 				2E85C10A1B3210C400A1F47F /* Images.xcassets */,
 				2E85C10C1B3210C400A1F47F /* LaunchScreen.xib */,
 				2E85C1011B3210C400A1F47F /* Supporting Files */,
