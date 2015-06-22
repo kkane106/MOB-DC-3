@@ -8,10 +8,22 @@ import UIKit
 // ex: modifyVar(&passedParemeter)
 // Write a function changeName that prints out "Name changed to 'paremeter'" and that changes the value of the variable passed to it
 
+func changeName () {
+    
+}
+
 // Write a function to find the sum of any two multiples below any max value (make the default 2000)
 // call sould be something like this: addMultiples(mult1: 3, mult2: 5)
 
 // Change calculator: write a function that takes a dollar amount and returns the amount of pennies, nickles, dimes, and quarters needed to return as change (if under $1)
+
+func changeCalculator(changeValue: Double) -> String {
+    var numQuarter = 0, numDime = 0, numNickel = 0, numPennie = 0, currentValue: Double = 0
+    while changeValue >= 0.25 {
+        currentValue = changeValue - 0.25
+        ++numQuarter
+    }
+}
 
 // Variadic paremeters are an endless list of paremeters that can be passed inside a function. The data inside the function itself is greated as an array. Write a function that takes a paremeter describing whether to  multiply or add, and a variadic paremeter that represents all the numbers. Return either the sum or the multiplicaiton of the integerss.
 // Variadic paremeters example: addNumbers(numbers: Int...)
