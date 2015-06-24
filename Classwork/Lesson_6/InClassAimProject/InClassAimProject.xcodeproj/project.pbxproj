@@ -13,6 +13,8 @@
 		3CA1CDDD1B38D4E80033558B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1CDDC1B38D4E80033558B /* Images.xcassets */; };
 		3CA1CDE01B38D4E80033558B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1CDDE1B38D4E80033558B /* LaunchScreen.xib */; };
 		3CA1CDEC1B38D4E90033558B /* InClassAimProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1CDEB1B38D4E90033558B /* InClassAimProjectTests.swift */; };
+		3CA1CDF61B38D57A0033558B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1CDF51B38D57A0033558B /* logo.png */; };
+		3CA1CDF81B38E3150033558B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1CDF71B38E3150033558B /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3CA1CDE51B38D4E90033558B /* InClassAimProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InClassAimProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1CDEA1B38D4E90033558B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA1CDEB1B38D4E90033558B /* InClassAimProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InClassAimProjectTests.swift; sourceTree = "<group>"; };
+		3CA1CDF51B38D57A0033558B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		3CA1CDF71B38E3150033558B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,11 @@
 		3CA1CDD21B38D4E80033558B /* InClassAimProject */ = {
 			isa = PBXGroup;
 			children = (
+				3CA1CDF51B38D57A0033558B /* logo.png */,
 				3CA1CDD51B38D4E80033558B /* AppDelegate.swift */,
 				3CA1CDD71B38D4E80033558B /* ViewController.swift */,
 				3CA1CDD91B38D4E80033558B /* Main.storyboard */,
+				3CA1CDF71B38E3150033558B /* ProfileViewController.swift */,
 				3CA1CDDC1B38D4E80033558B /* Images.xcassets */,
 				3CA1CDDE1B38D4E80033558B /* LaunchScreen.xib */,
 				3CA1CDD31B38D4E80033558B /* Supporting Files */,
@@ -192,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA1CDF61B38D57A0033558B /* logo.png in Resources */,
 				3CA1CDDB1B38D4E80033558B /* Main.storyboard in Resources */,
 				3CA1CDE01B38D4E80033558B /* LaunchScreen.xib in Resources */,
 				3CA1CDDD1B38D4E80033558B /* Images.xcassets in Resources */,
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA1CDF81B38E3150033558B /* ProfileViewController.swift in Sources */,
 				3CA1CDD81B38D4E80033558B /* ViewController.swift in Sources */,
 				3CA1CDD61B38D4E80033558B /* AppDelegate.swift in Sources */,
 			);
