@@ -5,35 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>73FCF915-1ED1-4BC0-9C83-D106F1FA1F40</string>
-=======
-	<string>1D1FC170-03A9-42C1-BE6B-979FC6919916</string>
->>>>>>> 9986b1df61c17fbc8c5dbfded4d41cf4f4848b76
+	<string>60F1AC05-3F21-4CF9-9B09-571CDE0A63B7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>LifecycleTabbedExample</string>
+	<string>Lesson07-Enum</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BFDAA4717EEB9965546778FF65FDEFE74CECE3C5</key>
-<<<<<<< HEAD
-		<string>https://github.com/kkane106/MOB-DC-3.git</string>
-=======
 		<string>github.com:ga-students/MOB-DC-3.git</string>
->>>>>>> 9986b1df61c17fbc8c5dbfded4d41cf4f4848b76
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Solutions/Lesson07/LifecycleTabbedExample/LifecycleTabbedExample.xcodeproj</string>
+	<string>Solutions/Lesson07/Lesson07-Enum.playground</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BFDAA4717EEB9965546778FF65FDEFE74CECE3C5</key>
-		<string>../../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-<<<<<<< HEAD
-	<string>https://github.com/kkane106/MOB-DC-3.git</string>
-=======
 	<string>github.com:ga-students/MOB-DC-3.git</string>
->>>>>>> 9986b1df61c17fbc8c5dbfded4d41cf4f4848b76
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
