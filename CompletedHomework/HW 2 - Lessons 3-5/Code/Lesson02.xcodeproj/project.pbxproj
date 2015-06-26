@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C498D831B3DD9DB00C0587B /* FibonacciAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C498D821B3DD9DB00C0587B /* FibonacciAdder.swift */; };
 		5D06C6AD19D8D2710082F2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06C6AC19D8D2710082F2DE /* AppDelegate.swift */; };
 		5D06C6B219D8D2710082F2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C6B019D8D2710082F2DE /* Main.storyboard */; };
 		5D06C6B419D8D2710082F2DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D06C6B319D8D2710082F2DE /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		3C498D811B3DCA0500C0587B /* StringFunction.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = StringFunction.playground; path = ../../../../../Development/StringFunction.playground; sourceTree = "<group>"; };
+		3C498D821B3DD9DB00C0587B /* FibonacciAdder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciAdder.swift; sourceTree = "<group>"; };
 		5D06C6A719D8D2710082F2DE /* Lesson02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D06C6AB19D8D2710082F2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D06C6AC19D8D2710082F2DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				5D06C6B019D8D2710082F2DE /* Main.storyboard */,
 				3C498D811B3DCA0500C0587B /* StringFunction.playground */,
 				5D06C6AA19D8D2710082F2DE /* Supporting Files */,
+				3C498D821B3DD9DB00C0587B /* FibonacciAdder.swift */,
 			);
 			path = Lesson02;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				5D06C6D319D8D7420082F2DE /* FourthViewController.swift in Sources */,
 				5D06C6CF19D8D7350082F2DE /* SecondViewController.swift in Sources */,
 				5D06C6CD19D8D72E0082F2DE /* FirstViewController.swift in Sources */,
+				3C498D831B3DD9DB00C0587B /* FibonacciAdder.swift in Sources */,
 				5D06C6D119D8D73C0082F2DE /* ThirdViewController.swift in Sources */,
 				5D06C6AD19D8D2710082F2DE /* AppDelegate.swift in Sources */,
 			);

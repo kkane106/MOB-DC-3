@@ -16,9 +16,15 @@ class FourthViewController: UIViewController {
     
     @IBOutlet weak var calculateFibonacciButton: UIButton!
     
+    @IBAction func calculateFibonacciAction(sender: UIButton) {
+        let fibonacciLookup = FibonacciAdder()
+        let index = numberField.text.toInt()
+        fibonacciLookup.fibonacciNumberAtIndex(index!)
+        fibonacciLabel.text = String(fibonacciLookup.fibonacciIndex)
     
+    }
 /*
-    BONUS TODO seven: Hook up the text input box, label and and a ‘calculate’ button. Create a ‘fibonacci adder’ class with a method ‘fibonacciNumberAtIndex' which takes indexOfFibonacciNumber (an integer).  When the button is pressed, create an instance of that class, call the method, and print out the appropriate fibonacci number of an inputted integer.
+    BONUS TODO seven: Hook up the text input box, label and and a ‘calculate’ button. Create a ‘fibonacci adder’ class with a method ‘fibonacciNumberAtIndex' which takes indexOfFibonacciNumber (an integer).  When the button is pressed, create an instance of that class, call the method, and print out the appropriate fibonacci number of an inputted integer.v
     The first fibonacci number is 0, the second is 1, the third is 1, the fourth is two, the fifth is 3, the sixth is 5, etc. The Xth fibonacci number is the sum of the X-1th fibonacci number and the X-2th fibonacci number.
 */
 }

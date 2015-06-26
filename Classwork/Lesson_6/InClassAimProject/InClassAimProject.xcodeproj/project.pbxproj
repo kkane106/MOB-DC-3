@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C498D801B3C9FDF00C0587B /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		3CA1CDD01B38D4E80033558B /* InClassAimProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InClassAimProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1CDD41B38D4E80033558B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CA1CDD51B38D4E80033558B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		3CA1CDC71B38D4E80033558B = {
 			isa = PBXGroup;
 			children = (
+				3C498D801B3C9FDF00C0587B /* MyPlayground.playground */,
 				3CA1CDD21B38D4E80033558B /* InClassAimProject */,
 				3CA1CDE81B38D4E90033558B /* InClassAimProjectTests */,
 				3CA1CDD11B38D4E80033558B /* Products */,
@@ -417,6 +419,7 @@
 				3CA1CDF11B38D4E90033558B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA1CDF21B38D4E90033558B /* Build configuration list for PBXNativeTarget "InClassAimProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +428,7 @@
 				3CA1CDF41B38D4E90033558B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,6 +29,9 @@ switch number {
 
 
 
+let x = "drive"
+let y = "banana"
+x + y
 
 
 
