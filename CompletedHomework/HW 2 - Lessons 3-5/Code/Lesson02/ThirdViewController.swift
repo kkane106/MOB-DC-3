@@ -15,11 +15,16 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var evenOrOddLabel: UILabel!
     @IBOutlet weak var calculateButton: UIButton!
     
-    func evenOrOddNumber(number: Int) {
-        var even = false
+    @IBAction func calculateAction(sender: UIButton){
+        var numberInput: Int = numberInputField.text.toInt()!
+        evenOrOddLabel.text = evenOrOddNumber(numberInput)
+    }
+    
+    func evenOrOddNumber(number: Int) -> String{
         if number % 2 == 0 {
-            even = true
+            return "is even"
         }
+        return "is not even"
     }
     
 /*
