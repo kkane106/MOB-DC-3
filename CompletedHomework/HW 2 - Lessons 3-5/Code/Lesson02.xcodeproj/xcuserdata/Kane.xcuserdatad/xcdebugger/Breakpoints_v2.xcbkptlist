@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Lesson02/FirstViewController.swift"
-            timestampString = "457032202.037403"
+            timestampString = "457226011.00462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "generateTextAction(_:)"
             landmarkType = "5">
          </BreakpointContent>

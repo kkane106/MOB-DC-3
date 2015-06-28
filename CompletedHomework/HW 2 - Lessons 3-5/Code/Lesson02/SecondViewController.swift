@@ -18,7 +18,13 @@ class SecondViewController: UIViewController {
     
     var calculatedNumber = 0
     
+//  set keypad to numberpad to sanitize data input
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        numberField.keyboardType = .NumberPad
+    }
     
+//  Is there an easier way to deal with text fields so that I don't have to keep converting to/from strings?
     @IBAction func addAction(sender: UIButton) {
         addNumberToCalculation(numberField.text)
         calculatedNumberLabel.text = String(calculatedNumber)

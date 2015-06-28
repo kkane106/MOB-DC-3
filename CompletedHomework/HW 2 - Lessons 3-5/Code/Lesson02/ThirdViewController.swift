@@ -15,6 +15,12 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var evenOrOddLabel: UILabel!
     @IBOutlet weak var calculateButton: UIButton!
     
+//    Sanitize data input
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        numberInputField.keyboardType = .NumberPad
+    }
+    
     @IBAction func calculateAction(sender: UIButton){
         var numberInput: Int = numberInputField.text.toInt()!
         evenOrOddLabel.text = evenOrOddNumber(numberInput)

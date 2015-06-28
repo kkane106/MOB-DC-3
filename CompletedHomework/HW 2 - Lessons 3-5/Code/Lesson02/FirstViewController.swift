@@ -20,6 +20,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ageField.keyboardType = .NumberPad
+        nameField.keyboardType = .ASCIICapable
     }
     /*
     TODO one: hook up a button in interface builder to a new function (to be written) in this class. Also hook up the label to this class. When the button is clicked, the function to be written must make a label say ‘hello world!’
@@ -35,15 +36,25 @@ class FirstViewController: UIViewController {
         } else if nameField.text == "" && ageField.text != "" {
             textToReplaceLabel.text = sayHelloWorld() + sayWhatCanYouDo(ageField.text) + sayEverythingYouCanDo(ageField.text)
         } else {
-            textToReplaceLabel.text =  sayHelloWorld() + sayHelloNameAge(nameField.text, age: ageField.text) + sayWhatCanYouDo(ageField.text) + sayEverythingYouCanDo(ageField.text)
+            textToReplaceLabel.text =  sayHelloWorld() + sayHelloNameAge(name: nameField.text, age: ageField.text) + sayWhatCanYouDo(ageField.text) + sayEverythingYouCanDo(ageField.text)
         }
     }
     
+/*
+    I used multiple carriage returns here instead of a new label as, depending on the input, there could be
+    different edge case outputs...not sure if its what you wanted, let me know!
+*/
     func sayHelloWorld() -> String {
         return "hello world!" + "\r"
     }
     
-    func sayHelloNameAge(name: String, age: String) -> String {
+/* 
+    I thought this function was breaking, but when I removed it from the @IBAction above and entered a string in the 
+    nameField, it still broke...I tried detaching the nameField and reconnecting it in Storyboard, but that didn't 
+    seem to have any effect, even more bizarrely it was working earlier... The only error throw is '(lldb)' -->
+    any advice? Thanks!
+*/
+    func sayHelloNameAge(#name: String, age: String) -> String {
         return "Hello \(name), you are \(age) years old!" + "\r"
         
     }

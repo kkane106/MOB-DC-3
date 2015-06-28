@@ -11,11 +11,16 @@ import UIKit
 class FourthViewController: UIViewController {
     
     @IBOutlet weak var numberField: UITextField!
-
     @IBOutlet weak var fibonacciLabel: UILabel!
-    
     @IBOutlet weak var calculateFibonacciButton: UIButton!
     
+//    Sanitize data input
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        numberField.keyboardType = .NumberPad
+    }
+    
+//    References FibonacciAdder class located in --> FibonacciAdder.swift
     @IBAction func calculateFibonacciAction(sender: UIButton) {
         let fibonacciLookup = FibonacciAdder()
         let index = numberField.text.toInt()
