@@ -48,12 +48,6 @@ class FirstViewController: UIViewController {
         return "hello world!" + "\r"
     }
     
-/* 
-    I thought this function was breaking, but when I removed it from the @IBAction above and entered a string in the 
-    nameField, it still broke...I tried detaching the nameField and reconnecting it in Storyboard, but that didn't 
-    seem to have any effect, even more bizarrely it was working earlier... The only error throw is '(lldb)' -->
-    any advice? Thanks!
-*/
     func sayHelloNameAge(#name: String, age: String) -> String {
         return "Hello \(name), you are \(age) years old!" + "\r"
         
