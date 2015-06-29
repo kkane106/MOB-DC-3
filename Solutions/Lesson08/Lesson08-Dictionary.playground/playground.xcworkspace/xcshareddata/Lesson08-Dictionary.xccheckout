@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8A75FA7E-5FB3-49B5-9D7D-21EF10583833</string>
+	<string>DE1D8A82-CE87-4B6B-B2C7-B42F4F72DBFF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Lesson08-Array</string>
+	<string>Lesson08-Dictionary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BFDAA4717EEB9965546778FF65FDEFE74CECE3C5</key>
 		<string>github.com:ga-students/MOB-DC-3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Solutions/Lesson08/Lesson08-Array.playground</string>
+	<string>Solutions/Lesson08/Lesson08-Dictionary.playground</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BFDAA4717EEB9965546778FF65FDEFE74CECE3C5</key>
