@@ -30,6 +30,7 @@ class FirstViewController: UIViewController {
     TODO four: Hook up the button to a NEW function (in additino to the three above). Print “you can drive” if the user is above 16 but below 18. It should print “You can drive and vote” if the user is above 18 but below 21. If the user is above 21, it should print “you can drive, vote and drink (but not at the same time!”.
     */
     
+//    This isn't the prettiest, but it works
     @IBAction func generateTextAction(sender: UIButton) {
         if nameField.text == "" && ageField.text == "" {
             textToReplaceLabel.text = sayHelloWorld()

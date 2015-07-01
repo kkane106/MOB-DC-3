@@ -22,8 +22,12 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func calculateAction(sender: UIButton){
-        var numberInput: Int = numberInputField.text.toInt()!
-        evenOrOddLabel.text = evenOrOddNumber(numberInput)
+        if let numberInput: Int = numberInputField.text.toInt() {
+            evenOrOddLabel.text = evenOrOddNumber(numberInput)
+        } else {
+            evenOrOddLabel.text = "Please enter a number"
+        }
+
     }
     
     func evenOrOddNumber(number: Int) -> String{
