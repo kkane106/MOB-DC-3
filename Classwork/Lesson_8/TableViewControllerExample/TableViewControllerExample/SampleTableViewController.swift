@@ -43,7 +43,7 @@ class SampleTableViewController: UITableViewController {
         if indexPath.row == 0 {
         cell.textLabel?.text = "Arthur"
         } else {
-        cell.textLabel?.text = "Thomas"            
+        cell.textLabel?.text = "Thomas"
         }
 
         return cell
