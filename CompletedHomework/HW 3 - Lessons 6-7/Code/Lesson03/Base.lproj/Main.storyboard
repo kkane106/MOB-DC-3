@@ -67,7 +67,9 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
                     </view>
                     <navigationItem key="navigationItem" id="hzY-Hy-RMA"/>
                     <connections>
+                        <outlet property="label" destination="NMl-Di-GNm" id="hgW-9l-eKD"/>
                         <segue destination="tH5-nV-9zA" kind="show" identifier="show" id="O1F-Kb-DN0"/>
+                        <segue destination="Kt4-21-0uk" kind="presentation" identifier="showModal" id="XPu-Br-gul"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -92,5 +94,60 @@ It needs to have an image view and a dismiss button that dismisses the modal. Do
             </objects>
             <point key="canvasLocation" x="969" y="407"/>
         </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="Kb4-Ha-beH">
+            <objects>
+                <viewController id="Kt4-21-0uk" customClass="ModalViewController" customModule="Lesson03" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2cq-ea-aTL"/>
+                        <viewControllerLayoutGuide type="bottom" id="vpJ-67-Dgu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KwL-4l-1k7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images.png" translatesAutoresizingMaskIntoConstraints="NO" id="isC-zK-2lB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="50" y="150" width="300" height="300"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x2-YY-4hY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="20" width="110" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dismissButtonAction:" destination="Kt4-21-0uk" eventType="touchUpInside" id="isW-VY-FAE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="isC-zK-2lB"/>
+                                <exclude reference="6x2-YY-4hY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="isC-zK-2lB"/>
+                                <include reference="6x2-YY-4hY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="6x2-YY-4hY" id="QES-jM-dOu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sSe-0Z-1GS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="1156"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="images.png" width="147" height="147"/>
+    </resources>
 </document>

@@ -10,20 +10,37 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func openModalView(sender: UIButton) {
-        presentViewController(ModalViewController(), animated: true, completion: nil)
-    }
-    
-    let swipeRec = UISwipeGestureRecognizer()
+    @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // target is self (where will it happen) view controller, action is a function we create
+//        let swipe = UISwipeGestureRecognizer(target: self, action: "gestureAction")
+        // add the direction to swipe
+//        swipe.direction = .Right
+        // user can do something with this, disable by default
+//        label.userInteractionEnabled = true
+        // add the initializer to the label
+        
+        // TAP example
+        
+        let tap = UITapGestureRecognizer(target: self, action: "gestureAction")
+        tap.numberOfTapsRequired = 3
+//        label.addGestureRecognizer(tap)
+//        label.userInteractionEnabled = true
+        view.addGestureRecognizer(tap)
 
     }
     
-    func swipedView() {
-
+    func gestureAction() {
+        println("Gesture")
+        
+        // this can be prefacedw with a prepare for segue method to pass information
+        // use this to initiate the segue to the modal
+        self.performSegueWithIdentifier("showModal", sender: nil)
     }
+    
+    
     /*
     TODO one: Hook up a swipeable area on the home screen that must present a modal dialog when swiped. You must create the modal dialog and present it in CODE (not the storyboard).
     TODO two: Add an imageview to the modal dialog presented in TODO two.
