@@ -8,8 +8,16 @@
 
 import UIKit
 
+// added here so that it is globally accessible in application
+protocol AddStudentDelegate {
+    func addStudent(name: String)
+}
+
 class AddViewController: UIViewController {
+    
     @IBOutlet weak var nameField: UITextField!
+    
+    var delegate: AddStudentDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +43,7 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func save(sender: UIButton) {
+        delegate?.addStudent(nameField.text)
         dismiss()
     }
     

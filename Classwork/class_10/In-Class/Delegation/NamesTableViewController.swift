@@ -8,7 +8,12 @@
 
 import UIKit
 
-class NamesTableViewController: UITableViewController {
+class NamesTableViewController: UITableViewController, AddStudentDelegate {
+    
+    func addStudent(name: String) {
+        names.append(name)
+        tableView.reloadData()
+    }
     
     // Keep track of all names in this array
     var names = [String]()
@@ -28,4 +33,10 @@ class NamesTableViewController: UITableViewController {
         return cell
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showAddStudent" {
+            let destinationVC = segue.destinationViewController as! AddViewController
+            destinationVC.delegate = self
+        }
+    }
 }

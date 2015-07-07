@@ -37,7 +37,7 @@
                     <navigationItem key="navigationItem" title="Students" id="hTY-HB-tVf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5OZ-ZM-QZo">
                             <connections>
-                                <segue destination="riu-L3-vgj" kind="presentation" id="QMw-ll-ser"/>
+                                <segue destination="riu-L3-vgj" kind="presentation" identifier="showAddStudent" id="QMw-ll-ser"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
