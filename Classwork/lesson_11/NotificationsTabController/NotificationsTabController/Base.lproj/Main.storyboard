@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1sz-jt-gtT">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="wSd-DZ-Fdp">
+            <objects>
+                <viewController id="fYL-ct-kab" customClass="SecondViewController" customModule="NotificationsTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oFj-Y1-VPD"/>
+                        <viewControllerLayoutGuide type="bottom" id="HBN-2A-zWU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FNj-GN-4rn">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mu-yn-ymx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Blue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="166" width="31" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="blueButton:" destination="fYL-ct-kab" eventType="touchUpInside" id="H0b-jT-EhM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9Mu-yn-ymx"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9Mu-yn-ymx"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="h6b-3W-IfZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hxb-KO-cKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193.5" y="243"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="AFc-sc-oKG">
+            <objects>
+                <viewController id="vzx-vq-THb" customClass="ViewController" customModule="NotificationsTabController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C1a-xK-N1P"/>
+                        <viewControllerLayoutGuide type="bottom" id="6LZ-gJ-VYV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s9N-96-uoy">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3m-6a-e0X">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Red">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="128" y="83" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="redButton:" destination="vzx-vq-THb" eventType="touchUpInside" id="VPb-9i-m9N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.02745098248" blue="0.090196080509999998" alpha="1" colorSpace="deviceRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="L3m-6a-e0X"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="L3m-6a-e0X"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Lwp-1y-FTS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzp-Mq-2LN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="193.5" y="-419"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1AS-It-V4H">
+            <objects>
+                <tabBarController id="1sz-jt-gtT" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="9Ju-Kj-3JH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vzx-vq-THb" kind="relationship" relationship="viewControllers" id="Zh8-cI-TAD"/>
+                        <segue destination="fYL-ct-kab" kind="relationship" relationship="viewControllers" id="ink-gh-Qmo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4O-06-lZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-736.5" y="-88"/>
+        </scene>
+    </scenes>
+</document>
