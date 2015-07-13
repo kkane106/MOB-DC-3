@@ -1,6 +1,11 @@
 // Normal Class
 
 class NormalClass {
+    var h: Int?
+    
+    init() {
+        
+    }
     
 }
 

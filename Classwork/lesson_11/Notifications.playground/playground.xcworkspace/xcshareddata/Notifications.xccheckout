@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>5B718D83-5459-4E3E-813A-D0ED12C3F15F</string>
+	<string>418281A6-3B24-404A-9049-6015158E80BC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Notifications-Two</string>
+	<string>Notifications</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BFDAA4717EEB9965546778FF65FDEFE74CECE3C5</key>
 		<string>https://github.com/kkane106/MOB-DC-3.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Solutions/Lesson11/Notifications-Two/Notifications-Two.xcodeproj</string>
+	<string>Classwork/lesson_11/Notifications.playground</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BFDAA4717EEB9965546778FF65FDEFE74CECE3C5</key>
-		<string>../../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/kkane106/MOB-DC-3.git</string>
