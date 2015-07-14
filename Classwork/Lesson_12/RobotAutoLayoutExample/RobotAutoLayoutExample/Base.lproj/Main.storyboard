@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xpd-gd-Pkc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3LM-Sq-1tH">
+            <objects>
+                <viewController id="qz0-TS-bWC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gyR-BK-AsR"/>
+                        <viewControllerLayoutGuide type="bottom" id="8wW-XS-tmt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gOt-tO-US5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wW8-BC-Xim">
+                                <rect key="frame" x="16" y="30" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LD1-O4-5Vb">
+                                <rect key="frame" x="16" y="92" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHP-CS-skp">
+                                <rect key="frame" x="277" y="154" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IK3-Jz-BpF">
+                                <rect key="frame" x="16" y="197" width="568" height="383"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wW8-BC-Xim" firstAttribute="trailing" secondItem="gOt-tO-US5" secondAttribute="trailingMargin" id="07M-i3-f5y"/>
+                            <constraint firstItem="wW8-BC-Xim" firstAttribute="leading" secondItem="gOt-tO-US5" secondAttribute="leadingMargin" id="5PT-qy-4dS"/>
+                            <constraint firstItem="IK3-Jz-BpF" firstAttribute="trailing" secondItem="gOt-tO-US5" secondAttribute="trailingMargin" id="5i7-bM-2yz"/>
+                            <constraint firstItem="wW8-BC-Xim" firstAttribute="top" secondItem="gyR-BK-AsR" secondAttribute="bottom" constant="10" id="J3e-ls-xYK"/>
+                            <constraint firstItem="IK3-Jz-BpF" firstAttribute="top" secondItem="tHP-CS-skp" secondAttribute="bottom" constant="13" id="Nzl-PK-gGF"/>
+                            <constraint firstItem="8wW-XS-tmt" firstAttribute="top" secondItem="IK3-Jz-BpF" secondAttribute="bottom" constant="20" id="T1y-Bp-Afo"/>
+                            <constraint firstAttribute="centerX" secondItem="tHP-CS-skp" secondAttribute="centerX" id="ZCi-Sw-jgY"/>
+                            <constraint firstItem="LD1-O4-5Vb" firstAttribute="trailing" secondItem="gOt-tO-US5" secondAttribute="trailingMargin" id="d6c-g0-QYb"/>
+                            <constraint firstItem="LD1-O4-5Vb" firstAttribute="top" secondItem="wW8-BC-Xim" secondAttribute="bottom" constant="32" id="ii5-Qt-ob5"/>
+                            <constraint firstItem="IK3-Jz-BpF" firstAttribute="leading" secondItem="gOt-tO-US5" secondAttribute="leadingMargin" id="imH-23-mzo"/>
+                            <constraint firstItem="tHP-CS-skp" firstAttribute="top" secondItem="LD1-O4-5Vb" secondAttribute="bottom" constant="32" id="kJC-X9-Wpc"/>
+                            <constraint firstItem="LD1-O4-5Vb" firstAttribute="leading" secondItem="gOt-tO-US5" secondAttribute="leadingMargin" id="zTi-br-6ps"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zJm-Zi-tU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="205"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="2ki-ZI-SLV">
+            <objects>
+                <viewController id="Xpd-gd-Pkc" customClass="CodeViewController" customModule="RobotAutoLayoutExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pfg-gh-1h6"/>
+                        <viewControllerLayoutGuide type="bottom" id="bN2-eH-i4I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ogz-NP-cmX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bn7-5V-6Ff">
+                                <rect key="frame" x="16" y="30" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bn7-5V-6Ff" firstAttribute="top" secondItem="pfg-gh-1h6" secondAttribute="bottom" constant="10" id="X8b-CS-5c3"/>
+                            <constraint firstItem="Bn7-5V-6Ff" firstAttribute="leading" secondItem="ogz-NP-cmX" secondAttribute="leadingMargin" id="Zf6-y4-Oa9"/>
+                            <constraint firstItem="Bn7-5V-6Ff" firstAttribute="trailing" secondItem="ogz-NP-cmX" secondAttribute="trailingMargin" id="gSE-9b-8L5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="Bn7-5V-6Ff" id="Szb-L9-hYJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1lf-YN-mNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="912"/>
+        </scene>
+    </scenes>
+</document>

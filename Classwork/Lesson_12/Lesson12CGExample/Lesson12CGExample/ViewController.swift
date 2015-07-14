@@ -27,9 +27,9 @@ class ViewController: UIViewController {
         squareC.backgroundColor = UIColor.whiteColor()
         squareB.addSubview(squareC)
         
-        for v in view.subviews {
-            println(v)
-        }
+//        for v in view.subviews {
+//            println(v)
+//        }
     }
 }
 
