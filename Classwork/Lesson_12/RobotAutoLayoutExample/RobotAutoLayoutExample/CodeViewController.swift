@@ -50,7 +50,7 @@ class CodeViewController: UIViewController {
             attribute: NSLayoutAttribute.Right,
             multiplier: 1.0, constant: 0
         )
-
+        
         
         // These turn the constraints on
         leftConstraint.active = true
@@ -81,5 +81,5 @@ class CodeViewController: UIViewController {
         
         
     }
-
+    
 }

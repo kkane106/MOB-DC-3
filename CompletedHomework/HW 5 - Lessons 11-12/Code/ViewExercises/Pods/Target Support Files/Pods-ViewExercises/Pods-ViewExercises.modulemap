@@ -1,0 +1,6 @@
+framework module Pods_ViewExercises {
+  umbrella header "Pods-ViewExercises-umbrella.h"
+
+  export *
+  module * { export * }
+}
