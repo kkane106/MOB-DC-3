@@ -30,6 +30,7 @@ class ExerciseViewController: UIViewController {
         self.exerciseView.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(exerciseView)
         
+        self.toolbar.translucent = false
         self.toolbar.frame = CGRect(x: 0, y: CGRectGetMaxY(self.view.frame) - 44, width: CGRectGetWidth(self.view.frame), height: 44)
         self.view.addSubview(toolbar)
         toolbar.autoresizingMask = UIViewAutoresizing.FlexibleTopMargin | UIViewAutoresizing.FlexibleWidth
