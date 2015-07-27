@@ -22,7 +22,19 @@ class StudentsTableViewController: UITableViewController, StudentDelegate {
     // MARK: - Student Delegate
 
     func addStudent(newStudent: Student) {
+        students.append(newStudent)
+        tableView.reloadData()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
         
+        if segue.identifier == "addStudent" {
+            let destinationVC = segue.destinationViewController as! UINavigationController
+            let addVC = destinationVC.topViewController as! AddViewController
+            
+            addVC.delegate = self
+        }
     }
 
     // MARK: - Table view data source

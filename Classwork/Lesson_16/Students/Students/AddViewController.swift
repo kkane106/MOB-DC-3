@@ -80,6 +80,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         let newStudent = Student(name: nameField.text, location: locationField.text)
         
         // We pass the student to the delegate
+        delegate?.addStudent(newStudent)
         
         dismiss(UIBarButtonItem())
     }
