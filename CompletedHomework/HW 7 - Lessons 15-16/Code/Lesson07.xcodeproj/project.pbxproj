@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3CEF6CA41B693B67009F704D /* Root.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF6CA31B693B67009F704D /* Root.plist */; };
+		3CEF6CA61B69629F009F704D /* flat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF6CA51B69629F009F704D /* flat.txt */; };
+		3CEF6CA81B696925009F704D /* array.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF6CA71B696925009F704D /* array.txt */; };
 		5D1F7F8F19DB24CF0017441C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F7F8E19DB24CF0017441C /* AppDelegate.swift */; };
 		5D1F7F9119DB24CF0017441C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1F7F9019DB24CF0017441C /* FirstViewController.swift */; };
 		5D1F7F9419DB24CF0017441C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1F7F9219DB24CF0017441C /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		3CEF6CA31B693B67009F704D /* Root.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Root.plist; path = Settings.bundle/Root.plist; sourceTree = "<group>"; };
+		3CEF6CA51B69629F009F704D /* flat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flat.txt; sourceTree = "<group>"; };
+		3CEF6CA71B696925009F704D /* array.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = array.txt; sourceTree = "<group>"; };
 		5D1F7F8919DB24CF0017441C /* Lesson07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson07.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1F7F8D19DB24CF0017441C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1F7F8E19DB24CF0017441C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,8 +145,10 @@
 				5D1F7F9019DB24CF0017441C /* FirstViewController.swift */,
 				5D1F7FAE19DB2EFF0017441C /* SecondViewController.swift */,
 				5D1F7FB019DB2F060017441C /* ThirdViewController.swift */,
+				3CEF6CA51B69629F009F704D /* flat.txt */,
 				5D1F7FB219DB2F0C0017441C /* FourthViewController.swift */,
 				5D1F7FB419DB2F130017441C /* FifthViewController.swift */,
+				3CEF6CA71B696925009F704D /* array.txt */,
 				5D1F7FB619DB2F1A0017441C /* SixthViewController.swift */,
 			);
 			name = Assignments;
@@ -232,6 +238,8 @@
 				5D1F7F9419DB24CF0017441C /* Main.storyboard in Resources */,
 				5D1F7FBA19DB36710017441C /* Settings.bundle in Resources */,
 				5D1F7F9619DB24CF0017441C /* Images.xcassets in Resources */,
+				3CEF6CA81B696925009F704D /* array.txt in Resources */,
+				3CEF6CA61B69629F009F704D /* flat.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

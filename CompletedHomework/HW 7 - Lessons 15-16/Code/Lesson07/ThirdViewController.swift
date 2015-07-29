@@ -10,9 +10,20 @@ import UIKit
 
 class ThirdViewController: UIViewController {
 
+    @IBOutlet weak var flatFileTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let path = NSBundle.mainBundle().pathForResource("flat", ofType: "txt")
+        var text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)!
+        flatFileTextView.text = text
+
     }
+    
+    @IBAction func saveUserText(sender: UIBarButtonItem) {
+        let path = NSBundle.mainBundle().pathForResource("flat", ofType: "txt")
+        flatFileTextView.text.writeToFile(path!, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
+        
+    }
+    
 }

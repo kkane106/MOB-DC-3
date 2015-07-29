@@ -10,9 +10,12 @@ import UIKit
 
 class FourthViewController: UIViewController {
 
+    @IBOutlet weak var flatFileTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let path = NSBundle.mainBundle().pathForResource("flat", ofType: "txt")
+        var text = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding, error: nil)!
+        flatFileTextView.text = text
     }
 }
