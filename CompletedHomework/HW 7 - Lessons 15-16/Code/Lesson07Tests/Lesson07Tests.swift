@@ -1,15 +1,15 @@
 //
-//  StudentsTests.swift
-//  StudentsTests
+//  Lesson07Tests.swift
+//  Lesson07Tests
 //
-//  Created by LOANER on 7/26/15.
-//  Copyright (c) 2015 Thomas Degry. All rights reserved.
+//  Created by Rudd Taylor on 9/30/14.
+//  Copyright (c) 2014 General Assembly. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class StudentsTests: XCTestCase {
+class Lesson07Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
