@@ -1,0 +1,13 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+use_frameworks!
+
+target 'Lesson17Networking' do
+    pod 'Alamofire'
+end
+
+target 'Lesson17NetworkingTests' do
+
+end
+
