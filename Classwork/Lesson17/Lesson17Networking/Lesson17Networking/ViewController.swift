@@ -15,6 +15,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Alamofire.request(.GET, "http://httpbin.org/get", parameters: ["foo":"bar"])
+            .response { request, response, data, error in
+                println("request: \(request)")
+                println("response: \(response)")
+                println("data: \(data)")
+                println("error: \(error)")
+        }
         
         
 //**************** NSJSONSerialization Example *********************
