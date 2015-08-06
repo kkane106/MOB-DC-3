@@ -66,7 +66,7 @@ class AddViewController: UIViewController, UITextFieldDelegate {
         // Create a fire moment
         let fireMoment = EventType(rawValue: fireMomentControl.selectedSegmentIndex)!
         
-        // Create a unique identifier
+        // Create a unique universal identifier -> Randomly generated string
         let uuid = NSUUID().UUIDString
         
         // Send delegate message
